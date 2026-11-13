@@ -1,0 +1,1237 @@
+{
+ "BUDGET_TOKENS": 8930,
+ "CONFIGS": {
+  "B1": [
+   "vggt",
+   {
+    "r": 1
+   }
+  ],
+  "E1-flash": [
+   "vggt",
+   {
+    "dedup": false,
+    "layers": "flash",
+    "r": 3
+   }
+  ],
+  "E1-all": [
+   "vggt",
+   {
+    "dedup": false,
+    "r": 3
+   }
+  ],
+  "E2-all": [
+   "vggt",
+   {
+    "alpha": 1.0,
+    "r": 3
+   }
+  ],
+  "E2-a05": [
+   "vggt",
+   {
+    "alpha": 0.5,
+    "r": 3
+   }
+  ],
+  "E2-avg": [
+   "vggt",
+   {
+    "alpha": 1.0,
+    "pool": "avg",
+    "r": 3
+   }
+  ],
+  "E3-budget": [
+   "vggt",
+   {
+    "alpha": 1.0,
+    "r": "budget"
+   }
+  ],
+  "E2-flash": [
+   "vggt",
+   {
+    "alpha": 1.0,
+    "layers": "flash",
+    "r": 3
+   }
+  ],
+  "E1-all-r2": [
+   "vggt",
+   {
+    "dedup": false,
+    "r": 2
+   }
+  ],
+  "E2-all-r2": [
+   "vggt",
+   {
+    "alpha": 1.0,
+    "r": 2
+   }
+  ],
+  "E1-all-r4": [
+   "vggt",
+   {
+    "dedup": false,
+    "r": 4
+   }
+  ],
+  "E2-all-r4": [
+   "vggt",
+   {
+    "alpha": 1.0,
+    "r": 4
+   }
+  ],
+  "K-r2k10": [
+   "vggt",
+   {
+    "dedup": false,
+    "keyframe_every": 10,
+    "r": 2
+   }
+  ],
+  "K-r3k10": [
+   "vggt",
+   {
+    "dedup": false,
+    "keyframe_every": 10,
+    "r": 3
+   }
+  ],
+  "AV-s4": [
+   "vggt",
+   {
+    "diag": true,
+    "layers": 9,
+    "mean": true,
+    "r": 4,
+    "sub": [
+     2,
+     2
+    ]
+   }
+  ],
+  "AV-s9": [
+   "vggt",
+   {
+    "diag": true,
+    "layers": 9,
+    "mean": true,
+    "r": 9,
+    "sub": [
+     3,
+     3
+    ]
+   }
+  ],
+  "AV-s16": [
+   "vggt",
+   {
+    "diag": true,
+    "layers": 9,
+    "mean": true,
+    "r": 16,
+    "sub": [
+     4,
+     4
+    ]
+   }
+  ],
+  "NB-s9m4": [
+   "vggt",
+   {
+    "layers": 9,
+    "mean": true,
+    "nbr": 4,
+    "r": 9,
+    "sub": [
+     3,
+     3
+    ]
+   }
+  ],
+  "NB-s16m4": [
+   "vggt",
+   {
+    "layers": 9,
+    "mean": true,
+    "nbr": 4,
+    "r": 16,
+    "sub": [
+     4,
+     4
+    ]
+   }
+  ],
+  "NB-s9m2": [
+   "vggt",
+   {
+    "layers": 9,
+    "mean": true,
+    "nbr": 2,
+    "r": 9,
+    "sub": [
+     3,
+     3
+    ]
+   }
+  ],
+  "NB-s9m8": [
+   "vggt",
+   {
+    "layers": 9,
+    "mean": true,
+    "nbr": 8,
+    "r": 9,
+    "sub": [
+     3,
+     3
+    ]
+   }
+  ],
+  "NB-s9m4t": [
+   "vggt",
+   {
+    "layers": 9,
+    "mean": true,
+    "nbr": 4,
+    "nbr_mode": "temporal",
+    "r": 9,
+    "sub": [
+     3,
+     3
+    ]
+   }
+  ],
+  "NB-s9m4-nomean": [
+   "vggt",
+   {
+    "layers": 9,
+    "nbr": 4,
+    "r": 9,
+    "sub": [
+     3,
+     3
+    ]
+   }
+  ],
+  "NBx-s9m3": [
+   "vggt",
+   {
+    "diag": true,
+    "layers": 9,
+    "mean": true,
+    "nbr": 3,
+    "nbr_self": false,
+    "r": 9,
+    "sub": [
+     3,
+     3
+    ]
+   }
+  ],
+  "AV-s4-g0": [
+   "vggt",
+   {
+    "diag": true,
+    "layers": "all",
+    "mean": true,
+    "r": 4,
+    "sub": [
+     2,
+     2
+    ]
+   }
+  ],
+  "AVK-s4k10": [
+   "vggt",
+   {
+    "diag": true,
+    "keyframe_every": 10,
+    "layers": 9,
+    "mean": true,
+    "r": 4,
+    "sub": [
+     2,
+     2
+    ]
+   }
+  ],
+  "AVK-s9k10": [
+   "vggt",
+   {
+    "diag": true,
+    "keyframe_every": 10,
+    "layers": 9,
+    "mean": true,
+    "r": 9,
+    "sub": [
+     3,
+     3
+    ]
+   }
+  ],
+  "AVK-s9k5": [
+   "vggt",
+   {
+    "diag": true,
+    "keyframe_every": 5,
+    "layers": 9,
+    "mean": true,
+    "r": 9,
+    "sub": [
+     3,
+     3
+    ]
+   }
+  ],
+  "G-s4": [
+   "vggt",
+   {
+    "layers": "all",
+    "r": 4,
+    "sub": [
+     2,
+     2
+    ]
+   }
+  ],
+  "AV-s4-nodm": [
+   "vggt",
+   {
+    "layers": 9,
+    "r": 4,
+    "sub": [
+     2,
+     2
+    ]
+   }
+  ],
+  "AVE-s4e36-nodm": [
+   "vggt",
+   {
+    "early_sub": [
+     6,
+     6
+    ],
+    "layers": 9,
+    "r": 4,
+    "sub": [
+     2,
+     2
+    ]
+   }
+  ],
+  "AVS-s4": [
+   "vggt",
+   {
+    "diag": true,
+    "layers": 9,
+    "mean": true,
+    "r": 4,
+    "shift": true,
+    "sub": [
+     2,
+     2
+    ]
+   }
+  ],
+  "AVS-s9": [
+   "vggt",
+   {
+    "diag": true,
+    "layers": 9,
+    "mean": true,
+    "r": 9,
+    "shift": true,
+    "sub": [
+     3,
+     3
+    ]
+   }
+  ],
+  "AVES-s4e36": [
+   "vggt",
+   {
+    "diag": true,
+    "early_sub": [
+     6,
+     6
+    ],
+    "layers": 9,
+    "mean": true,
+    "r": 4,
+    "shift": true,
+    "sub": [
+     2,
+     2
+    ]
+   }
+  ],
+  "AVES-s9e36": [
+   "vggt",
+   {
+    "diag": true,
+    "early_sub": [
+     6,
+     6
+    ],
+    "layers": 9,
+    "mean": true,
+    "r": 9,
+    "shift": true,
+    "sub": [
+     3,
+     3
+    ]
+   }
+  ],
+  "AVEK-s4e36k10": [
+   "vggt",
+   {
+    "diag": true,
+    "early_sub": [
+     6,
+     6
+    ],
+    "keyframe_every": 10,
+    "layers": 9,
+    "mean": true,
+    "r": 4,
+    "sub": [
+     2,
+     2
+    ]
+   }
+  ],
+  "AVEK-s4e36k20": [
+   "vggt",
+   {
+    "diag": true,
+    "early_sub": [
+     6,
+     6
+    ],
+    "keyframe_every": 20,
+    "layers": 9,
+    "mean": true,
+    "r": 4,
+    "sub": [
+     2,
+     2
+    ]
+   }
+  ],
+  "Q-q4": [
+   "vggt",
+   {
+    "diag": true,
+    "early_sub": [
+     6,
+     6
+    ],
+    "layers": 9,
+    "mean": true,
+    "qsub": [
+     2,
+     2
+    ],
+    "r": 4,
+    "sub": [
+     2,
+     2
+    ]
+   }
+  ],
+  "Q-q4k0": [
+   "vggt",
+   {
+    "diag": true,
+    "early_sub": [
+     6,
+     6
+    ],
+    "layers": 9,
+    "mean": true,
+    "qsub": [
+     2,
+     2
+    ],
+    "qsub_keep0": true,
+    "r": 4,
+    "sub": [
+     2,
+     2
+    ]
+   }
+  ],
+  "Q-q4L13": [
+   "vggt",
+   {
+    "diag": true,
+    "early_sub": [
+     6,
+     6
+    ],
+    "layers": 9,
+    "mean": true,
+    "qsub": [
+     2,
+     2
+    ],
+    "qsub_from": 13,
+    "r": 4,
+    "sub": [
+     2,
+     2
+    ]
+   }
+  ],
+  "Q-q4L17": [
+   "vggt",
+   {
+    "diag": true,
+    "early_sub": [
+     6,
+     6
+    ],
+    "layers": 9,
+    "mean": true,
+    "qsub": [
+     2,
+     2
+    ],
+    "qsub_from": 17,
+    "r": 4,
+    "sub": [
+     2,
+     2
+    ]
+   }
+  ],
+  "Q-q9": [
+   "vggt",
+   {
+    "diag": true,
+    "early_sub": [
+     6,
+     6
+    ],
+    "layers": 9,
+    "mean": true,
+    "qsub": [
+     3,
+     3
+    ],
+    "r": 4,
+    "sub": [
+     2,
+     2
+    ]
+   }
+  ],
+  "Q-q4lse": [
+   "vggt",
+   {
+    "diag": true,
+    "early_sub": [
+     6,
+     6
+    ],
+    "layers": 9,
+    "mean": true,
+    "qsub": [
+     2,
+     2
+    ],
+    "qsub_mode": "lse",
+    "r": 4,
+    "sub": [
+     2,
+     2
+    ]
+   }
+  ],
+  "Q-q4lseL9": [
+   "vggt",
+   {
+    "diag": true,
+    "early_sub": [
+     6,
+     6
+    ],
+    "layers": 9,
+    "mean": true,
+    "qsub": [
+     2,
+     2
+    ],
+    "qsub_from": 9,
+    "qsub_mode": "lse",
+    "r": 4,
+    "sub": [
+     2,
+     2
+    ]
+   }
+  ],
+  "AVEL16": [
+   "vggt",
+   {
+    "diag": true,
+    "early_sub": [
+     6,
+     6
+    ],
+    "late_sub": [
+     4,
+     4
+    ],
+    "layers": 9,
+    "mean": true,
+    "r": 4,
+    "sub": [
+     2,
+     2
+    ]
+   }
+  ],
+  "AVEL36": [
+   "vggt",
+   {
+    "diag": true,
+    "early_sub": [
+     6,
+     6
+    ],
+    "late_sub": [
+     6,
+     6
+    ],
+    "layers": 9,
+    "mean": true,
+    "r": 4,
+    "sub": [
+     2,
+     2
+    ]
+   }
+  ],
+  "AVEL16f13": [
+   "vggt",
+   {
+    "diag": true,
+    "early_sub": [
+     6,
+     6
+    ],
+    "late_from": 13,
+    "late_sub": [
+     4,
+     4
+    ],
+    "layers": 9,
+    "mean": true,
+    "r": 4,
+    "sub": [
+     2,
+     2
+    ]
+   }
+  ],
+  "AVELF": [
+   "vggt",
+   {
+    "diag": true,
+    "early_sub": [
+     6,
+     6
+    ],
+    "late_frame": true,
+    "layers": 9,
+    "mean": true,
+    "r": 4,
+    "sub": [
+     2,
+     2
+    ]
+   }
+  ],
+  "AVE-s4e36": [
+   "vggt",
+   {
+    "diag": true,
+    "early_sub": [
+     6,
+     6
+    ],
+    "layers": 9,
+    "mean": true,
+    "r": 4,
+    "sub": [
+     2,
+     2
+    ]
+   }
+  ],
+  "ABL-e36-Lfull": [
+   "vggt",
+   {
+    "diag": true,
+    "early_sub": [
+     6,
+     6
+    ],
+    "full_layers": {
+     "__range__": [
+      9,
+      24,
+      1
+     ]
+    },
+    "layers": 9,
+    "mean": true,
+    "r": 4,
+    "sub": [
+     2,
+     2
+    ]
+   }
+  ],
+  "ABL-Efull-s4": [
+   "vggt",
+   {
+    "diag": true,
+    "full_layers": {
+     "__range__": [
+      0,
+      9,
+      1
+     ]
+    },
+    "layers": "all",
+    "mean": true,
+    "r": 4,
+    "sub": [
+     2,
+     2
+    ]
+   }
+  ],
+  "ABL-Efull-s4k10": [
+   "vggt",
+   {
+    "diag": true,
+    "full_layers": {
+     "__range__": [
+      0,
+      9,
+      1
+     ]
+    },
+    "keyframe_every": 10,
+    "layers": "all",
+    "mean": true,
+    "r": 4,
+    "sub": [
+     2,
+     2
+    ]
+   }
+  ],
+  "AVEK-s4e36k5": [
+   "vggt",
+   {
+    "diag": true,
+    "early_sub": [
+     6,
+     6
+    ],
+    "keyframe_every": 5,
+    "layers": 9,
+    "mean": true,
+    "r": 4,
+    "sub": [
+     2,
+     2
+    ]
+   }
+  ],
+  "AVEB-s4e36f14": [
+   "vggt",
+   {
+    "diag": true,
+    "early_sub": [
+     6,
+     6
+    ],
+    "full_layers": {
+     "__range__": [
+      14,
+      19,
+      1
+     ]
+    },
+    "layers": 9,
+    "mean": true,
+    "r": 4,
+    "sub": [
+     2,
+     2
+    ]
+   }
+  ],
+  "AVEKB-s4e36k10f14": [
+   "vggt",
+   {
+    "diag": true,
+    "early_sub": [
+     6,
+     6
+    ],
+    "full_layers": {
+     "__range__": [
+      14,
+      19,
+      1
+     ]
+    },
+    "keyframe_every": 10,
+    "layers": 9,
+    "mean": true,
+    "r": 4,
+    "sub": [
+     2,
+     2
+    ]
+   }
+  ],
+  "AVEKB-f15n3": [
+   "vggt",
+   {
+    "diag": true,
+    "early_sub": [
+     6,
+     6
+    ],
+    "full_layers": {
+     "__range__": [
+      15,
+      18,
+      1
+     ]
+    },
+    "keyframe_every": 10,
+    "layers": 9,
+    "mean": true,
+    "r": 4,
+    "sub": [
+     2,
+     2
+    ]
+   }
+  ],
+  "AVEKB-f14n3": [
+   "vggt",
+   {
+    "diag": true,
+    "early_sub": [
+     6,
+     6
+    ],
+    "full_layers": {
+     "__range__": [
+      14,
+      17,
+      1
+     ]
+    },
+    "keyframe_every": 10,
+    "layers": 9,
+    "mean": true,
+    "r": 4,
+    "sub": [
+     2,
+     2
+    ]
+   }
+  ],
+  "AVEKB-f16n3": [
+   "vggt",
+   {
+    "diag": true,
+    "early_sub": [
+     6,
+     6
+    ],
+    "full_layers": {
+     "__range__": [
+      16,
+      19,
+      1
+     ]
+    },
+    "keyframe_every": 10,
+    "layers": 9,
+    "mean": true,
+    "r": 4,
+    "sub": [
+     2,
+     2
+    ]
+   }
+  ],
+  "AVEKB-g12": [
+   "vggt",
+   {
+    "band_sub": [
+     1,
+     2
+    ],
+    "diag": true,
+    "early_sub": [
+     6,
+     6
+    ],
+    "full_layers": {
+     "__range__": [
+      14,
+      19,
+      1
+     ]
+    },
+    "keyframe_every": 10,
+    "layers": 9,
+    "mean": true,
+    "r": 4,
+    "sub": [
+     2,
+     2
+    ]
+   }
+  ],
+  "AVEK-oracle": [
+   "vggt",
+   {
+    "diag": true,
+    "early_sub": [
+     6,
+     6
+    ],
+    "keyframe_every": 10,
+    "keyframe_extra": "oracle",
+    "layers": 9,
+    "mean": true,
+    "r": 4,
+    "sub": [
+     2,
+     2
+    ]
+   }
+  ],
+  "AVEK-rand": [
+   "vggt",
+   {
+    "diag": true,
+    "early_sub": [
+     6,
+     6
+    ],
+    "keyframe_every": 10,
+    "keyframe_extra": "rand",
+    "layers": 9,
+    "mean": true,
+    "r": 4,
+    "sub": [
+     2,
+     2
+    ]
+   }
+  ],
+  "AVEKU-u10": [
+   "vggt",
+   {
+    "diag": true,
+    "early_sub": [
+     6,
+     6
+    ],
+    "keyframe_every": 10,
+    "keyframe_unif": 10,
+    "layers": 9,
+    "mean": true,
+    "r": 4,
+    "sub": [
+     2,
+     2
+    ]
+   }
+  ],
+  "AVEKBU-f16u10": [
+   "vggt",
+   {
+    "diag": true,
+    "early_sub": [
+     6,
+     6
+    ],
+    "full_layers": {
+     "__range__": [
+      16,
+      19,
+      1
+     ]
+    },
+    "keyframe_every": 10,
+    "keyframe_unif": 10,
+    "layers": 9,
+    "mean": true,
+    "r": 4,
+    "sub": [
+     2,
+     2
+    ]
+   }
+  ],
+  "AVU-u5": [
+   "vggt",
+   {
+    "diag": true,
+    "early_sub": [
+     6,
+     6
+    ],
+    "keyframe_every": 10,
+    "keyframe_unif": 5,
+    "kmeans": false,
+    "layers": 9,
+    "mean": true,
+    "r": 4,
+    "sub": [
+     2,
+     2
+    ]
+   }
+  ],
+  "AVU-c40": [
+   "vggt",
+   {
+    "diag": true,
+    "early_sub": [
+     6,
+     6
+    ],
+    "keyframe_count": 40,
+    "keyframe_every": 10,
+    "kmeans": false,
+    "layers": 9,
+    "mean": true,
+    "r": 4,
+    "sub": [
+     2,
+     2
+    ]
+   }
+  ],
+  "ABL-L9-13full": [
+   "vggt",
+   {
+    "diag": true,
+    "early_sub": [
+     6,
+     6
+    ],
+    "full_layers": {
+     "__range__": [
+      9,
+      14,
+      1
+     ]
+    },
+    "layers": 9,
+    "mean": true,
+    "r": 4,
+    "sub": [
+     2,
+     2
+    ]
+   }
+  ],
+  "ABL-L14-18full": [
+   "vggt",
+   {
+    "diag": true,
+    "early_sub": [
+     6,
+     6
+    ],
+    "full_layers": {
+     "__range__": [
+      14,
+      19,
+      1
+     ]
+    },
+    "layers": 9,
+    "mean": true,
+    "r": 4,
+    "sub": [
+     2,
+     2
+    ]
+   }
+  ],
+  "ABL-L19-23full": [
+   "vggt",
+   {
+    "diag": true,
+    "early_sub": [
+     6,
+     6
+    ],
+    "full_layers": {
+     "__range__": [
+      19,
+      24,
+      1
+     ]
+    },
+    "layers": 9,
+    "mean": true,
+    "r": 4,
+    "sub": [
+     2,
+     2
+    ]
+   }
+  ],
+  "AVEW-pref": [
+   "vggt",
+   {
+    "diag": true,
+    "early_sub": [
+     6,
+     6
+    ],
+    "layers": 9,
+    "mean": true,
+    "r": 4,
+    "sub": [
+     2,
+     2
+    ],
+    "wsel": "pref"
+   }
+  ],
+  "AVEW-norm": [
+   "vggt",
+   {
+    "diag": true,
+    "early_sub": [
+     6,
+     6
+    ],
+    "layers": 9,
+    "mean": true,
+    "r": 4,
+    "sub": [
+     2,
+     2
+    ],
+    "wsel": "norm"
+   }
+  ],
+  "AVEKW-pref": [
+   "vggt",
+   {
+    "diag": true,
+    "early_sub": [
+     6,
+     6
+    ],
+    "keyframe_every": 10,
+    "layers": 9,
+    "mean": true,
+    "r": 4,
+    "sub": [
+     2,
+     2
+    ],
+    "wsel": "pref"
+   }
+  ],
+  "AVE-s4e16": [
+   "vggt",
+   {
+    "diag": true,
+    "early_sub": [
+     4,
+     4
+    ],
+    "layers": 9,
+    "mean": true,
+    "r": 4,
+    "sub": [
+     2,
+     2
+    ]
+   }
+  ],
+  "AVE-s9e36": [
+   "vggt",
+   {
+    "diag": true,
+    "early_sub": [
+     6,
+     6
+    ],
+    "layers": 9,
+    "mean": true,
+    "r": 9,
+    "sub": [
+     3,
+     3
+    ]
+   }
+  ],
+  "AVEK-s9e36k10": [
+   "vggt",
+   {
+    "diag": true,
+    "early_sub": [
+     6,
+     6
+    ],
+    "keyframe_every": 10,
+    "layers": 9,
+    "mean": true,
+    "r": 9,
+    "sub": [
+     3,
+     3
+    ]
+   }
+  ],
+  "Ref-flash": [
+   "flash",
+   {
+    "dedup": false,
+    "layers": "flash",
+    "r": 3
+   }
+  ],
+  "Ref-flash-mass": [
+   "flash",
+   {
+    "alpha": 1.0,
+    "layers": "flash",
+    "r": 3
+   }
+  ]
+ }
+}

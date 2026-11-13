@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tfvggt"
+version = "0.1.0"
+description = "Training-free faster inference for VGGT: compressed global attention on frozen VGGT-1B weights"
+readme = "README.md"
+requires-python = ">=3.9"
+# torch / torchvision: install the build matching your CUDA first (Kaggle already has them).
+# FlashVGGT (model definition) is not a pip dependency: tfvggt fetches a pinned copy on first use
+# (or uses an installed one / $FLASHVGGT_ROOT), see src/tfvggt/_flash.py. Its own requirements pull in
+# open3d, wandb, hydra, which inference does not need.
+dependencies = [
+    "torch>=2.1",
+    "torchvision",
+    "numpy",
+    "scipy",
+    "pillow",
+    "einops",
+    "huggingface_hub",
+    "torch_kmeans",
+    "remotezip",
+]
+
+[project.optional-dependencies]
+dev = ["pytest"]
+kaggle = ["kaggle"]
+
+[project.scripts]
+tfvggt = "tfvggt.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+tfvggt = ["assets/*.json"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

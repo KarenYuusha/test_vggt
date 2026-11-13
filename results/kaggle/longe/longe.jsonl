@@ -1,0 +1,3 @@
+{"config": "B1", "scene": "tfvggt-7scenes-longe", "seq": "seq-02", "frames": 400, "n_used": 400, "lowmem": false, "oom": true}
+{"config": "AV-s4", "scene": "tfvggt-7scenes-longe", "seq": "seq-02", "frames": 400, "n_used": 400, "lowmem": false, "oom": true}
+{"config": "AVE-s4e36", "scene": "tfvggt-7scenes-longe", "seq": "seq-02", "frames": 400, "n_used": 400, "lowmem": false, "oom": true}

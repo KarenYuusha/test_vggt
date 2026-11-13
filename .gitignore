@@ -1,0 +1,27 @@
+# data, checkpoints, caches (downloaded at run time, never committed)
+data/
+ckpts/
+*.pt
+*.pth
+.cache/
+
+# run outputs that are large or machine-specific (results/*.jsonl and the plans are kept)
+results/**/poses/
+results/**/*.npy
+results/**/*.log
+results/**/done.json
+
+# Kaggle credentials and scratch
+kaggle.json
+.kaggle/
+tools/kaggle/build/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.ipynb_checkpoints/
+.venv/
